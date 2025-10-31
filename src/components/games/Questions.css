@@ -1,0 +1,47 @@
+/* Largeur carte */
+.questions__card-width {
+  max-width: 32rem;
+  width: 100%;
+}
+
+/* Section joueur */
+.questions__player-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Question */
+.questions__question {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #2B1C12;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Instructions */
+.questions__instructions {
+  background-color: #6A8B61;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.questions__instructions p {
+  color: #F3EBD7;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* Compteur */
+.questions__counter {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #B25E3B;
+  font-weight: 700;
+  font-size: 0.875rem;
+}

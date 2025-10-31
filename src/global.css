@@ -1,0 +1,226 @@
+/* ============================================
+   CLASSES GLOBALES - 3 FOIE FILTRÉS
+   ============================================ */
+
+/* === TITRES === */
+
+/* Titre principal (ex: "3 FOIE FILTRÉS") */
+.global-title-main {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #2B1C12;
+  text-shadow: 3px 3px 0px #B25E3B;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* Titre de page (ex: "QUESTIONS 🔥") */
+.global-title-page {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #F3EBD7;
+  text-align: center;
+}
+
+/* Titre de section (ex: "QUI JOUE CE SOIR ?") */
+.global-title-section {
+  font-size: 2xl;
+  font-weight: 900;
+  color: #F3EBD7;
+  text-align: center;
+}
+
+/* === BOUTONS === */
+
+/* Bouton primaire (ex: bouton "COMMENCER") */
+.global-button-primary {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 9999px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: 4px solid #2B1C12;
+  background-color: #B25E3B;
+  color: #F3EBD7;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.global-button-primary:hover {
+  transform: scale(1.05);
+}
+
+/* Bouton retour */
+.global-button-back {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 900;
+  border: 4px solid #F3EBD7;
+  background-color: #2B1C12;
+  color: #F3EBD7;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.global-button-back:hover {
+  transform: scale(1.05);
+}
+
+/* Bouton secondaire */
+.global-button-secondary {
+  padding: 1rem;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  border: 4px solid #2B1C12;
+  background-color: #F3EBD7;
+  color: #2B1C12;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.global-button-secondary:hover {
+  transform: scale(1.05);
+}
+
+/* === CARTES === */
+
+/* Carte de jeu principale */
+.global-card {
+  background-color: #F3EBD7;
+  border: 4px solid #2B1C12;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* === BADGES === */
+
+/* Badge joueur */
+.global-badge-player {
+  background-color: #B25E3B;
+  border: 4px solid #2B1C12;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.global-badge-player-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #F3EBD7;
+}
+
+/* Badge info (ex: nombre de joueurs) */
+.global-badge-info {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: 4px solid #2B1C12;
+  background-color: #F3EBD7;
+}
+
+.global-badge-info-text {
+  font-weight: 900;
+  color: #B25E3B;
+}
+
+/* === BACKGROUNDS === */
+
+.global-bg-primary {
+  background-color: #6A8B61;
+}
+
+.global-bg-card {
+  background-color: #F3EBD7;
+}
+
+.global-bg-accent {
+  background-color: #B25E3B;
+}
+
+.global-bg-dark {
+  background-color: #2B1C12;
+}
+
+/* === TEXTES === */
+
+.global-text-primary {
+  color: #2B1C12;
+}
+
+.global-text-light {
+  color: #F3EBD7;
+}
+
+.global-text-accent {
+  color: #B25E3B;
+}
+
+/* === CONTENEURS === */
+
+/* Conteneur page full screen */
+.global-container-page {
+  min-height: 100vh;
+  background-color: #6A8B61;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+/* Header du jeu */
+.global-game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.global-game-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #2B1C12;
+  text-shadow: 3px 3px 0px #B25E3B;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Contenu central (carte) */
+.global-game-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer du jeu */
+.global-game-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.global-game-back-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 900;
+  border: 4px solid #F3EBD7;
+  background-color: #2B1C12;
+  color: #F3EBD7;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.global-game-back-button:hover {
+  transform: scale(1.05);
+}
+
+/* Conteneur centré */
+.global-container-centered {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
