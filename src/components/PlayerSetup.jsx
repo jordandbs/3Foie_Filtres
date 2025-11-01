@@ -69,7 +69,7 @@ export default function PlayerSetup({ onStart }) {
       <div className="player-setup__logo-container">
         <h1 className="player-setup__main-title">3 FOIE FILTRÉS</h1>
         <img
-          src="/logo.png"
+          src="/public/logo.png" 
           alt="3 Foie Filtrés"
           className="player-setup__logo"
         />
