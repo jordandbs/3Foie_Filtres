@@ -1,0 +1,16 @@
+{
+  "name": "3 Foie Filtrés",
+  "short_name": "3 Foie Filtrés",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#6A8B61",
+  "theme_color": "#6A8B61",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
