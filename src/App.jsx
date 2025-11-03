@@ -2,9 +2,10 @@ import { useState } from 'react';
 import PlayerSetup from './components/PlayerSetup';
 import GameMenu from './components/GameMenu';
 import Questions from './components/games/Questions';
+import TuPreferes from './components/games/TuPreferes';
 
 function App() {
-  const [screen, setScreen] = useState('setup'); 
+  const [screen, setScreen] = useState('setup'); // 'setup', 'menu', ou un ID de jeu
   const [players, setPlayers] = useState([]);
 
   // Page setup des joueurs
@@ -35,6 +36,16 @@ function App() {
   if (screen === 'questions') {
     return (
       <Questions
+        players={players}
+        onBack={() => setScreen('menu')}
+      />
+    );
+  }
+
+  // Jeu Tu Préfères
+  if (screen === 'tupreferes') {
+    return (
+      <TuPreferes
         players={players}
         onBack={() => setScreen('menu')}
       />

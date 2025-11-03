@@ -13,6 +13,7 @@ export default function GameMenu({ players, onSelectGame }) {
     { id: 'pong', name: 'BièrePong', icon: '🍺', desc: 'Vise juste !' },
     { id: 'chess', name: 'Chess', icon: '♟', desc: 'Échec et shot' },
     { id: 'poule', name: 'Poule??', icon: '🐔', desc: 'Mystère...' },
+    { id: 'choose', name: 'Pose ton doigt', icon: '☝', desc: 'Pose le doigt puis bois !' },
   ];
 
   return (
