@@ -4,7 +4,7 @@ import GameMenu from './components/GameMenu';
 import Questions from './components/games/Questions';
 
 function App() {
-  const [screen, setScreen] = useState('setup'); // 'setup', 'menu', ou un ID de jeu
+  const [screen, setScreen] = useState('setup'); 
   const [players, setPlayers] = useState([]);
 
   // Page setup des joueurs

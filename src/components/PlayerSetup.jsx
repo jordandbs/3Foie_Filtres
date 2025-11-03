@@ -151,10 +151,9 @@ export default function PlayerSetup({ onStart }) {
         )}
       </div>
 
-      {/* Footer */}
       <div className="player-setup__footer">
         <p className="player-setup__footer-text">
-          Pensé et développé avec ❤️ par Ro et Jo !
+          Jeux pensés et développés par Ro & Jo ❤️
         </p>
       </div>
     </div>

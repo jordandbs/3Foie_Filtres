@@ -1,33 +1,37 @@
 /* ============================================
    CLASSES GLOBALES - 3 FOIE FILTRÉS
+   Version Responsive
    ============================================ */
 
 /* === TITRES === */
 
 /* Titre principal (ex: "3 FOIE FILTRÉS") */
 .global-title-main {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   color: #2B1C12;
-  text-shadow: 3px 3px 0px #B25E3B;
+  text-shadow: 2px 2px 0px #B25E3B;
   letter-spacing: 0.1em;
   text-align: center;
+  margin: 0;
 }
 
 /* Titre de page (ex: "QUESTIONS 🔥") */
 .global-title-page {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
   font-weight: 900;
   color: #F3EBD7;
   text-align: center;
+  margin: 0;
 }
 
 /* Titre de section (ex: "QUI JOUE CE SOIR ?") */
 .global-title-section {
-  font-size: 2xl;
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
   font-weight: 900;
   color: #F3EBD7;
   text-align: center;
+  margin: 0;
 }
 
 /* === BOUTONS === */
@@ -35,20 +39,24 @@
 /* Bouton primaire (ex: bouton "COMMENCER") */
 .global-button-primary {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1rem 1.5rem;
   border-radius: 9999px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 900;
   border: 4px solid #2B1C12;
   background-color: #B25E3B;
   color: #F3EBD7;
   cursor: pointer;
-  transition: transform 0.2s;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.global-button-primary:active {
+  transform: scale(0.98);
 }
 
 .global-button-primary:hover {
-  transform: scale(1.05);
+  background-color: #9a4e31;
 }
 
 /* Bouton retour */
@@ -60,40 +68,53 @@
   background-color: #2B1C12;
   color: #F3EBD7;
   cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.2s;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.global-button-back:active {
+  transform: scale(0.98);
 }
 
 .global-button-back:hover {
-  transform: scale(1.05);
+  background-color: #1a110a;
 }
 
 /* Bouton secondaire */
 .global-button-secondary {
   padding: 1rem;
   border-radius: 9999px;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 900;
   border: 4px solid #2B1C12;
   background-color: #F3EBD7;
   color: #2B1C12;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.global-button-secondary:active {
+  transform: scale(0.98);
 }
 
 .global-button-secondary:hover {
-  transform: scale(1.05);
+  background-color: #e8dfc7;
 }
 
 /* === CARTES === */
 
-/* Carte de jeu principale */
+/* Carte de jeu principale - TAILLE FIXE */
 .global-card {
   background-color: #F3EBD7;
   border: 4px solid #2B1C12;
-  border-radius: 2rem;
-  padding: 2rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 28rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* === BADGES === */
@@ -109,7 +130,7 @@
 }
 
 .global-badge-player-name {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
   font-weight: 900;
   color: #F3EBD7;
 }
@@ -126,6 +147,7 @@
 .global-badge-info-text {
   font-weight: 900;
   color: #B25E3B;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
 }
 
 /* === BACKGROUNDS === */
@@ -168,20 +190,26 @@
   background-color: #6A8B61;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .global-container-page {
+    padding: 1.5rem;
+  }
 }
 
 /* Header du jeu */
 .global-game-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .global-game-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   color: #2B1C12;
-  text-shadow: 3px 3px 0px #B25E3B;
+  text-shadow: 2px 2px 0px #B25E3B;
   letter-spacing: 0.1em;
   margin: 0;
 }
@@ -192,12 +220,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 /* Footer du jeu */
 .global-game-footer {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .global-game-back-button {
@@ -208,13 +237,17 @@
   background-color: #2B1C12;
   color: #F3EBD7;
   cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.2s;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   display: inline-block;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.global-game-back-button:active {
+  transform: scale(0.98);
 }
 
 .global-game-back-button:hover {
-  transform: scale(1.05);
+  background-color: #1a110a;
 }
 
 /* Conteneur centré */
@@ -223,4 +256,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* === ANIMATIONS === */
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.global-animation-shake {
+  animation: shake 0.5s;
+}
+
+/* === RESPONSIVE === */
+
+/* Touch targets minimum 44px */
+button, a, input {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Empêcher le zoom sur iOS quand on focus un input */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Safe area pour les iPhones avec notch */
+@supports (padding: max(0px)) {
+  .global-container-page {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
 }
