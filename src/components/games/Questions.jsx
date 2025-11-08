@@ -123,7 +123,7 @@ export default function Questions({ players, onBack }) {
       "As-tu déjà donné de l’espoir sans intention derrière ?",
       "As-tu déjà commencé une relation juste pour éviter la solitude ?",
       "As-tu déjà relu ton propre “ok” dix fois avant de l’envoyer ?",
-      "As-tu déjà dit “je ne suis pas jaloux(se)” en l’étant vraiment ?",
+      "As-tu déjà dit “je ne suis pas jaloux” en l’étant vraiment ?",
       "As-tu déjà stalké la nouvelle relation de ton ex ?",
       "As-tu déjà profité de quelqu’un qui t’aimait plus que toi ?",
       "As-tu déjà utilisé le silence comme arme ?",
