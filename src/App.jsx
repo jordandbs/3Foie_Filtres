@@ -3,6 +3,7 @@ import PlayerSetup from './components/PlayerSetup';
 import GameMenu from './components/GameMenu';
 import Questions from './components/games/Questions';
 import TuPreferes from './components/games/TuPreferes';
+import PMU from './components/games/PMU';
 
 function App() {
   const [screen, setScreen] = useState('setup'); // 'setup', 'menu', ou un ID de jeu
@@ -46,6 +47,16 @@ function App() {
   if (screen === 'tupreferes') {
     return (
       <TuPreferes
+        players={players}
+        onBack={() => setScreen('menu')}
+      />
+    );
+  }
+
+  // Jeu PMU
+  if (screen === 'pmu') {
+    return (
+      <PMU
         players={players}
         onBack={() => setScreen('menu')}
       />
